@@ -1,0 +1,25 @@
+{
+  "name": "testjquery",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Yegor Tikhanin <yegor.tikhanin@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "amd"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "normalize-css": "^5.0.0"
+  }
+}

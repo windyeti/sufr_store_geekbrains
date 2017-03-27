@@ -1,0 +1,33 @@
+mixin social(...items)
+	ul.social
+		each item in items
+			li.social__item
+				a.social__link(class='social__'+item href='http://'+item+'.html')
+
+mixin menu_vertikal(items)
+	h2.menu__head Меню
+	ul.menu__items
+		each item, key in items
+			li.menu__item
+				a.menu__link(href=key+'.html')= item
+
+mixin goods(data)
+	.goods__container
+		a.goods__link(href='prodact/'+data.src+'.html')
+			img.goods__img(src='images/'+data.src+'.png')
+			.goods__name= data.name
+			.goods__price
+				.goods__realprice!= '&#8364;. ' + data.realprice
+				.goods__oldprice!= '&#8364;. ' + data.oldprice
+			if(data.flag)
+				div(class='goods__flag__'+data.flag)
+
+mixin brand(data)
+	each item, key in data
+		a.brand__link(href='http://www.'+item+'.html')
+			img.brand__img(src='images/brand-'+key+'.jpg')
+
+mixin instagallery(data)
+	each item, key in data
+		a.instagram__gallery__link(href='http://www.'+item)
+			img.instagram__gallery__img(src='images/'+key+'.jpg')

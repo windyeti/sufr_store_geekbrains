@@ -1,0 +1,172 @@
+.footer {
+	float: left;
+	width: 100%;
+	background: #373737;
+	font-family: 'Roboto-Regular';
+	color: white;
+	padding-bottom: 42px;
+		.container {
+			.clearfix:before,
+			.clearfix:after {
+			    content: " "; /* 1 */
+			    display: table; /* 2 */
+			}
+			.clearfix:after {
+			    clear: both;
+			}
+		position: relative;
+		width: 1170px;
+		margin: 0 auto;
+		padding: 53px 0 0 53px;
+			.category, 
+			.account, 
+			.support, 
+			.newsletter, 
+			.aboutus {
+				float: left;
+				& a {
+					text-decoration: none;
+					color: white;
+					&:hover {
+						color: #ff5602;
+						border-bottom: 1px dashed #ff5602;
+					}
+				}
+			}
+			.aboutus {
+				width: 230px;
+			}
+			.category__head, 
+			.account__head, 
+			.support__head, 
+			.newsletter__head,
+			.aboutus__head {
+				font-family: 'Raleway-ExtraBold';
+				font-size: 18px;
+				margin-bottom: 1.4em;
+			}
+			.newsletter__head,
+			.aboutus__head {
+				margin-bottom: .4em;
+			}
+			.category__items,
+			.account__items,
+			.support__items {
+				list-style: none;
+				padding: 0;
+				font-size: 12px;
+				line-height: 18px;
+			}
+			.category {
+				margin-right: 115px;
+			}
+			.account {
+				margin-right: 90px;
+			}
+			.support {
+				margin-right: 74px;
+			}
+			.newsletter {
+				font-size: 0;
+				margin-right: 45px;
+				.newsletter__text {
+					width: 230px;
+					font-size: 12px;
+					margin-bottom: 13px;
+				}
+				.newsletter__input {
+				    border: none;
+				    background: yellow;
+				    width: 159px;
+				    height: 30px;
+				    font-size: 11px;
+				    text-align: left;
+				    padding: 2px 0 0 20px;
+				    margin: 0 0 42px 0;
+				}
+				.newsletter__submit {
+				    border: none;
+				    background: black;
+				    color: white;
+				    text-align: center;
+				    width: 70px;
+				    height: 30px;
+				    font-size: 11px;
+				    padding: 2px 0 0 0;
+				    margin: 0;
+				}
+				.newsletter__paycard {
+					display: block;
+					margin-left: -10px;
+				}
+			}
+			.aboutus {
+				.aboutus__text {
+					font-size: 12px;
+					margin-bottom: 12px;
+					line-height: 12px;
+				}
+			}
+			.aboutus__phone {
+				font-size: 14px;
+				margin-bottom: 10px;
+				.aboutus__phone__phone {
+					float: left;
+					width: 60px;
+
+				}
+				.aboutus__phone__number {
+
+				}
+			}
+			.aboutus__email {
+				font-size: 14px;
+				.aboutus__email__email {
+					float: left;
+					width: 60px;
+				}
+				.aboutus__email__link {
+					color: yellow;
+				}
+			}
+
+	}
+}
+.downfooter {
+	float: left;
+	width: 100%;
+	height: 46px;
+	background: #333;
+	font-family: 'Roboto-Regular';
+	color: white;
+		.container {
+			.clearfix:before,
+			.clearfix:after {
+			    content: " "; /* 1 */
+			    display: table; /* 2 */
+			}
+			.clearfix:after {
+			    clear: both;
+			}
+		position: relative;
+		width: 1170px;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+	$social: facebook, tw, pinter, facebookplus, t, insta, rss;
+	$namefile: socialfooter;
+	@include social_header($social, $namefile);
+	.bydesigend {
+		float: left;
+		font-size: 12px;
+	    padding-left: 5px;
+	    line-height: 22px;
+	}
+	.social {
+		float: right;
+		padding-right: 5px;
+		.social__item {
+			padding-right: 9px;
+		}
+	}
+}

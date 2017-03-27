@@ -1,0 +1,50 @@
+.middle
+	.container
+		aside.aside
+			+menu_vertikal({'about': 'About', 'apparel' : 'apparel', 'surf apparel' : 'surf apparel', 'windsurf' : 'windsurf', 'kitesurf' : 'kitesurf', 'accessories' : 'accessories', 'sale' : 'sale', 'brands' : 'brands', 'blog' : 'blog', 'Gadgets' : 'Gadgets', 'contact' : 'cantact', 'Electronic Gadgets' : 'Electronic Gadgets'})
+			.hotnews
+				.hotnews__photo
+				.hotnews__text Power day is&nbspnow!!!
+		article.catalog
+			.goods(class='clearfix')
+				.goods__new(class='clearfix')
+					h3.goods__head New products
+					.goods__row
+						+goods({'src':'prodact01', 'name':'Speed', 'realprice':'2010.25', 'oldprice':'2400.50', 'flag':'red'})
+						+goods({'src':'prodact02', 'name':'SuperLightWind', 'realprice':'3300.55', 'oldprice':'3755.60', 'flag':'yellow'})
+						+goods({'src':'prodact03', 'name':'Magic Ride', 'realprice':'1925.60', 'oldprice':'2000.50', 'flag':'yellow'})
+						+goods({'src':'prodact04', 'name':'FS', 'realprice':'1230.90', 'oldprice':'1500.40', 'flag':'red'})
+						+goods({'src':'prodact05', 'name':'Slalom', 'realprice':'2410.25', 'oldprice':'2900.50'})
+						+goods({'src':'prodact06', 'name':'X-Cite', 'realprice':'1000', 'oldprice':'1200.45'})
+						+goods({'src':'prodact07', 'name':'Young', 'realprice':'650.25', 'oldprice':'750.60'})
+				.goods__top(class='clearfix')
+					h3.goods__head Top products
+					.goods__row
+						+goods({'src':'prodact21', 'name':'Sail Vapor', 'realprice':'1250.60', 'oldprice':'1499.90'})
+						+goods({'src':'prodact22', 'name':'NP Hellcat', 'realprice':'999.90', 'oldprice':'1099.60'})
+				.goods__sale(class='clearfix')
+					h3.goods__head sale products
+					.goods__row
+						+goods({'src':'prodact31', 'name':'Трапа', 'realprice':'29.90', 'oldprice':'99.90'})
+						+goods({'src':'prodact32', 'name':'Гик Монокок', 'realprice':'249.36', 'oldprice':'400.00'})
+						+goods({'src':'prodact33', 'name':'Mast 100%C', 'realprice':'1349.36', 'oldprice':'2400.00'})
+						+goods({'src':'prodact34', 'name':'SUP', 'realprice':'2249.36', 'oldprice':'3400.00'})
+		.brand(class='clearfix')
+			- var data= {'bicsport':'bicsport_site', 'gasstra':'gasstra_site', 'jp':'jp_site', 'mfc':'mfc_site', 'np':'np_site', 'ripcurl':'ripcurl_site', 'rrd':'rrd_site', 'tabou':'tabou_site', 'unifiber':'unifiber_site'}
+			+brand(data)
+		.instagram(class='clearfix')
+			.instagram__head Instagram feed: 
+				span.instagram__head__hesh #surfhouse
+			.instagram__gallery
+				- var data= ({'surfhouse01':'111111.ru', 'surfhouse02':'222222.ru', 'surfhouse03':'33333333.ru', 'surfhouse04':'44444444.ru', 'surfhouse05':'555555.ru', 'surfhouse06':'666666.ru'})
+				+instagallery(data)
+		.bigSocial(class='clearfix')
+			a.bigSocial__link(href='www.facebook.ru')
+				.bigSocial__item(class='bigSocial__item_facebook')
+					.bigSocial__facebook(class='bigSocial__adjust')
+			a.bigSocial__link(href='www.tw.ru')
+				.bigSocial__item(class='bigSocial__item_tw')
+					.bigSocial__tw(class='bigSocial__adjust')
+			a.bigSocial__link(href='www.pinterest.ru')
+				.bigSocial__item(class='bigSocial__item_pinter')
+					.bigSocial__pinter(class='bigSocial__adjust')

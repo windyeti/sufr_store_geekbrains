@@ -1,0 +1,20 @@
+include _common/mixin
+
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		block title
+			title Default title
+		link(href='https://fonts.googleapis.com/css?family=Raleway:400,700,700i,800|Roboto:400,700,700i' rel='stylesheet')
+		link(rel='shortcut icon' href='/images/favicon.png' type='image/png')
+		link(rel='stylesheet' type='text/css' href='css/main.css')
+	body
+		div.wrapper
+			block header
+				include _common/header
+			block middle
+				include _common/middle
+		block footer
+			include _common/footer
+		include ../js/main.js

@@ -1,0 +1,15 @@
+@import "../bower_components/normalize-css/normalize";
+
+//----------------
+
+@import '_layout/_mixin';
+@import '_layout/_variables';
+@import '_layout/_adjustment';
+@import '_layout/_fonts';
+
+//----------------
+
+@import 'section/header';
+@import 'section/menu';
+@import 'section/middle';
+@import 'section/footer';

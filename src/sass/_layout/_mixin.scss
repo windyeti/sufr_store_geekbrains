@@ -1,0 +1,28 @@
+@mixin social_header($items, $namefile) {
+$pos_x:0;
+$pos_y:0;
+
+.social {
+	list-style: none;
+	font-size: 0;
+
+	.social__item {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+	}
+}
+@each $item in $items {
+	.social__#{$item} {
+		background: url('../images/#{$namefile}.png') no-repeat #{$pos_x}px 0px;
+		display: block;
+		width: 20px;
+		height: 20px;
+		&:hover {
+			background-position-y: -20px;
+		}
+	}
+	$pos_x: $pos_x - 20;
+	$pos_y: $pos_y+20;
+}
+}

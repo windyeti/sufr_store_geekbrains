@@ -1,0 +1,103 @@
+.header {
+	min-width: 100%;
+	height: 700px;
+	float: left;
+	background-color: #abeafb;
+	background: url('../images/headerback.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+	.container {
+		&.clearfix:before,
+		&.clearfix:after {
+		    content: " "; /* 1 */
+		    display: table; /* 2 */
+		}
+		&.clearfix:after {
+		    clear: both;
+		}
+		position: relative;
+		width: 1170px;
+		margin: 0 auto;
+	}
+	$social: facebook, tw, youtube, pinter, insta;
+	$namefile: socialheader;
+	@include social_header($social, $namefile);
+
+	.logo {
+		position: absolute;
+	    top: 21px;
+	    left: 67px;
+
+	    .logo__text {
+	    	text-indent: -9999px;
+	    }
+	}
+	.welcome {
+		box-sizing: border-box;
+		width: 270px;
+		height: 300px;
+		position: absolute;
+	    background-color: yellow;
+	    top: 336px;
+	    padding: 56px 25px;
+	}
+	.welcome__head {
+  		font-family: 'Raleway-ExtraBold', sans-serif;
+		font-size: 1.85em;
+		font-weight: 700;
+		margin-bottom: 13px;
+		text-transform: uppercase;
+	}
+	.welcome__text{
+		font-family: 'Raleway-Bold', sans-serif;
+		line-height: 15px;
+		padding: 0;
+	}
+	.social {
+		float: right;
+		margin-top: 50px;
+		margin-right: 50px;
+
+	    .social__item {
+    	    padding-right: 8px;
+    	}
+	}
+	.reclama {
+		position: absolute;
+    	top: 249px;
+	    right: 102px;
+		width: 320px;
+		color: yellow;
+	}
+	.reclama__head {
+  		font-family: 'Raleway-ExtraBold', sans-serif;
+		text-transform: uppercase;
+		font-size: 3em;
+		fotn-weight: 700;
+		line-height: 14px;
+		margin: 4px 0 0px;
+	}
+	.reclama__head__year {
+  		font-family: 'Raleway-ExtraBold', sans-serif;
+	    font-size: 48px;
+	}
+	.reclama__text {
+		font-family: 'Raleway-Regular', sans-serif;
+		font-size: 1.2em;
+	    line-height: 23px;
+	}
+	.reclama__button {
+		margin-top: 59px;
+	    width: 129px;
+	    height: 53px;
+	    background: yellow;
+	    border: 0;
+	    font-family: 'Raleway-Black', sans-serif;
+		font-size: 14px;
+		cursor: pointer;
+	}
+}
+
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Raleway', sans-serif;
