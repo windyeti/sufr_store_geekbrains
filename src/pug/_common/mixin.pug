@@ -14,7 +14,7 @@ mixin menu_vertikal(items)
 mixin goods(data)
 	.goods__container
 		a.goods__link(href='prodact/'+data.src+'.html')
-			img.goods__img(src='images/'+data.src+'.png')
+			img.goods__img(src='images/'+data.src+'.png' alt=data.name title=data.name)
 			.goods__name= data.name
 			.goods__price
 				.goods__realprice!= '&#8364;. ' + data.realprice
@@ -25,9 +25,9 @@ mixin goods(data)
 mixin brand(data)
 	each item, key in data
 		a.brand__link(href='http://www.'+item+'.html')
-			img.brand__img(src='images/brand-'+key+'.jpg')
+			img.brand__img(src='images/brand-'+key+'.jpg' alt=key title=key)
 
 mixin instagallery(data)
 	each item, key in data
 		a.instagram__gallery__link(href='http://www.'+item)
-			img.instagram__gallery__img(src='images/'+key+'.jpg')
+			img.instagram__gallery__img(src='images/'+key+'.jpg' alt=key)
